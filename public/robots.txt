@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sanaullahmohammed.github.io/portfolio-v5/sitemap.xml

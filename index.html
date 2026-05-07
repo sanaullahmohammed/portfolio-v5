@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0e1a" />
+
+    <!-- spa-github-pages: restore original deep-link path before React boots -->
+    <script>
+      (function (l) {
+        if (l.search[1] === "p") {
+          var q = {};
+          l.search
+            .slice(1)
+            .split("&")
+            .forEach(function (v) {
+              var a = v.split("=");
+              q[a[0]] = a.slice(1).join("=").replace(/~and~/g, "&");
+            });
+          if (q.p !== undefined) {
+            window.history.replaceState(
+              null,
+              null,
+              l.pathname.slice(0, -1) + (q.p || "") + (q.q ? "?" + q.q : "") + l.hash
+            );
+          }
+        }
+      })(window.location);
+    </script>
+
+    <title>Mohammed Sanaullah — Software Engineer</title>
+    <meta name="description" content="Mohammed Sanaullah — Bengaluru-based software engineer building distributed systems, real-time frontends, and event-driven backends across TypeScript, .NET, and the JVM." />
+    <meta name="author" content="Mohammed Sanaullah" />
+    <link rel="canonical" href="https://sanaullahmohammed.github.io/portfolio-v5/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mohammed Sanaullah — Software Engineer" />
+    <meta property="og:description" content="Full-stack engineer (4+ yrs) shipping distributed systems at StoneX. TypeScript, .NET, Kafka, Kubernetes." />
+    <meta property="og:url" content="https://sanaullahmohammed.github.io/portfolio-v5/" />
+    <meta property="og:image" content="https://sanaullahmohammed.github.io/portfolio-v5/og-image.png" />
+    <meta property="og:site_name" content="Mohammed Sanaullah" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mohammed Sanaullah — Software Engineer" />
+    <meta name="twitter:description" content="Full-stack engineer (4+ yrs) shipping distributed systems at StoneX. TypeScript, .NET, Kafka, Kubernetes." />
+    <meta name="twitter:image" content="https://sanaullahmohammed.github.io/portfolio-v5/og-image.png" />
+
+    <link rel="manifest" href="/portfolio-v5/site.webmanifest" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohammed Sanaullah",
+        "jobTitle": "Software Engineer",
+        "url": "https://sanaullahmohammed.github.io/portfolio-v5/",
+        "image": "https://sanaullahmohammed.github.io/portfolio-v5/og-image.png",
+        "sameAs": [
+          "https://github.com/sanaullahmohammed",
+          "https://www.linkedin.com/in/mohammed-sanaullah-2040711a0/",
+          "https://leetcode.com/u/Mohammed_Sanaullah/"
+        ],
+        "worksFor": { "@type": "Organization", "name": "StoneX" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+        "knowsAbout": ["Distributed Systems", "TypeScript", ".NET", "Kafka", "Kubernetes", "React", "Microservices"]
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
