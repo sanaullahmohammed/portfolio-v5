@@ -38,7 +38,7 @@ const stack = [
 
 const experience = [
   {
-    role: "Software Engineer",
+    role: "Staff Engineer",
     company: "StoneX (formerly INTL FCStone)",
     location: "Bangalore, India",
     period: "Sep 2023 — Present",
@@ -72,7 +72,7 @@ export default function About() {
       <Seo
         title="About"
         type="profile"
-        description="About Mohammed Sanaullah — software engineer in Bengaluru with 4+ years of full-stack experience, currently shipping distributed trading systems at StoneX."
+        description="About Mohammed Sanaullah — staff engineer in Bengaluru with 4+ years of full-stack experience, currently shipping distributed trading systems at StoneX."
       />
       <section className="py-20">
         <div className="container">
@@ -86,7 +86,7 @@ export default function About() {
               <div className="opacity-0 animate-fade-in-up stagger-1">
                 <p className="text-lg text-foreground leading-relaxed">
                   I'm <span className="text-primary font-medium">Mohammed Sanaullah</span>, a
-                  software engineer in Bengaluru with 4+ years of full-stack experience across
+                  staff engineer in Bengaluru with 4+ years of full-stack experience across
                   TypeScript, .NET, and the JVM. I like the messy middle of distributed systems —
                   the queues, sagas, retries, and traces that decide whether a product feels
                   reliable or flaky.

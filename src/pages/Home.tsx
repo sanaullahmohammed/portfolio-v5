@@ -13,15 +13,15 @@ export default function Home() {
   return (
     <Layout>
       <Seo
-        title="Mohammed Sanaullah — Software Engineer"
+        title="Mohammed Sanaullah — Staff Engineer"
         rawTitle
-        description="Bengaluru-based software engineer with 4+ years building distributed systems, real-time frontends, and event-driven backends in TypeScript, .NET, and the JVM."
+        description="Bengaluru-based staff engineer with 4+ years building distributed systems, real-time frontends, and event-driven backends in TypeScript, .NET, and the JVM."
       />
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center bg-grid">
         <div className="container">
           <div className="max-w-3xl opacity-0 animate-fade-in-up">
-            <CodeLabel className="mb-6">Software Engineer · 4+ yrs</CodeLabel>
+            <CodeLabel className="mb-6">Staff Engineer · 4+ yrs</CodeLabel>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Hi, I'm Mohammed Sanaullah.
