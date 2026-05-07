@@ -1,0 +1,12 @@
+{
+  "name": "Mohammed Sanaullah",
+  "short_name": "Sanaullah",
+  "start_url": "/portfolio-v5/",
+  "scope": "/portfolio-v5/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#0a0e1a",
+  "icons": [
+    { "src": "/portfolio-v5/favicon.ico", "sizes": "any", "type": "image/x-icon" }
+  ]
+}
